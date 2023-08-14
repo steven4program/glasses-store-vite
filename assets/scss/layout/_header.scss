@@ -1,4 +1,62 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar {
+  padding: 16px 0;
+  background-color: $color-primary;
+
+  @include phone {
+    padding-bottom: 0;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  &-logo {
+    width: 80px;
+
+    @include phone {
+      margin: 0 0 16px 16px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+
+    @include phone {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    height: 100%;
+
+    @include phone {
+      width: 50%;
+      margin-right: 0;
+      border: 1px solid #fff;
+    }
+
+    & a {
+      height: 100%;
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      padding: 8px 32px;
+
+      @include phone {
+        font-size: 16px;
+        text-align: center;
+        padding: 12px 0;
+      }
+    }
+  }
 }
+
