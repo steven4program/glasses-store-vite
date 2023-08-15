@@ -1,17 +1,3 @@
-.container {
-  @include pad {
-    max-width: 992px;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-
-  @include phone {
-    max-width: 768px;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
 .product-navbar {
   ul {
     display: flex;

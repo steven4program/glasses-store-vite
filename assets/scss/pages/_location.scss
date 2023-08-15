@@ -4,21 +4,45 @@
     margin-top: 96px;
     margin-bottom: 32px;
     border-left: 8px solid #9F1213;
+
+    @include pad {
+      margin-top: 80px;
+    }
+
+    @include phone {
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
   }
 
   label {
     font-size: 24px;
     margin-right: 16px;
+    
+    @include phone {
+      display: inline-block;
+      padding: 7px 0;
+      font-size: 16px;
+    }
   }
 
   .city-select {
     display: flex;
     margin-bottom: 40px;
 
+    @include phone {
+      margin-bottom: 24px;
+    }
+
     select {
       padding: 6px 12px;
       width: 304px;
       border: 1px solid #CED4DA;
+
+      @include phone {
+        width: 276px;
+      }
     }
   }
 }
@@ -30,12 +54,22 @@
   gap: 24px;
 
   .location-card {
-    width: calc(33% - 2 * 24px / 3);
+    width: calc(33.3% - 2 * 24px / 3);
     min-height: 516px;
     display: flex;
     flex-direction: column;
     position: relative;
     border: 1px solid #CED4DA;
+
+    @include pad {
+      width: calc(50% - 12px);
+      min-height: 504px;
+    }
+
+    @include phone {
+      width: 100%;
+      min-height: 0;
+    }
 
     .card-top {
       border-bottom: 1px solid #CED4DA;
@@ -80,7 +114,7 @@
     padding: 16px 0;
     color: #fff;
     background-color: #000;
-    border: 0;
+    border: 1px solid #CED4DA;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -92,6 +126,10 @@
   
     &:active {
       background-color: $color-secondary;
+    }
+
+    @include phone {
+      position: relative;
     }
   }
 }
