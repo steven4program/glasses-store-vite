@@ -1,0 +1,97 @@
+.location-header {
+  h2 {
+    padding: 0 16px;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    border-left: 8px solid #9F1213;
+  }
+
+  label {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+
+  .city-select {
+    display: flex;
+    margin-bottom: 40px;
+
+    select {
+      padding: 6px 12px;
+      width: 304px;
+      border: 1px solid #CED4DA;
+    }
+  }
+}
+
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  gap: 24px;
+
+  .location-card {
+    width: calc(33% - 2 * 24px / 3);
+    min-height: 516px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #CED4DA;
+
+    .card-top {
+      border-bottom: 1px solid #CED4DA;
+    }
+    
+    h4 {
+      padding: 8px 24px;
+    }
+
+    .location-info {
+      padding: 24px 16px;
+
+      li {
+        display: flex;
+      }
+
+      .material-symbols-outlined {
+        margin-right: 8px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 24px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: #000;
+      font-size: 20px;
+    }
+  }
+
+  button {
+    padding: 16px 0;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary;
+    }
+  
+    &:active {
+      background-color: $color-secondary;
+    }
+  }
+}

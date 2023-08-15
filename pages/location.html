@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<title>Glasses Store</title>
+	</head>
+
+	<body>
+		<%- include('./layout/header'); -%>
+
+		<header class="location-header container">
+			<h2>門市據點</h2>
+			<div class="city-select">
+				<label for="cities">選擇地區</label>
+				<select name="cities" id="cities">
+					<option value="Taipei">台北市</option>
+					<option value="Taichung">台中市</option>
+					<option value="Kaohsiung">高雄市</option>
+				</select>
+			</div>
+		</header>
+
+		<section class="location-list-section container">
+			<div class="location-list">
+				<div class="location-card">
+					<div class="card-top">
+						<a href="#">
+							<img src="../assets/images/store-1.png" alt="store-1" />
+							<h4>台北中山旗艦店</h4>
+						</a>
+					</div>
+					<ul class="location-info">
+						<li>
+							<span class="material-symbols-outlined">call</span>
+							<p>電話：<a href="tel:+02000-1234">(02)000-1234</a></p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">schedule</span>
+							<p>營業時間：10:00-21:00</p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">location_on</span>
+							<p>地址：台北市中山區南京東路25巷2-1號</p>
+						</li>
+					</ul>
+					<button>詳細資訊</button>
+				</div>
+				<div class="location-card">
+					<div class="card-top">
+						<a href="#">
+							<img src="../assets/images/store-2.png" alt="store-2" />
+							<h4>台北綠園店</h4>
+						</a>
+					</div>
+					<ul class="location-info">
+						<li>
+							<span class="material-symbols-outlined">call</span>
+							<p>電話：<a href="tel:+02000-2345">(02)000-2345</a></p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">schedule</span>
+							<p>營業時間：10:00-21:00</p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">location_on</span>
+							<p>地址：台北市中正區復興南路 132-1 號</p>
+						</li>
+					</ul>
+					<button>詳細資訊</button>
+				</div>
+				<div class="location-card">
+					<div class="card-top">
+						<a href="#">
+							<img src="../assets/images/store-3.png" alt="store-3" />
+							<h4>台中清水旗艦店</h4>
+						</a>
+					</div>
+					<ul class="location-info">
+						<li>
+							<span class="material-symbols-outlined">call</span>
+							<p>電話：<a href="tel:+02000-1234">(02)000-1234</a></p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">schedule</span>
+							<p>營業時間：10:00-21:00</p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">location_on</span>
+							<p>地址：台中市清水區經南一路 23 號 8 樓</p>
+						</li>
+					</ul>
+					<button>詳細資訊</button>
+				</div>
+				<div class="location-card">
+					<div class="card-top">
+						<a href="#">
+							<img src="../assets/images/store-4.png" alt="store-4" />
+							<h4>高雄中正形象店</h4>
+						</a>
+					</div>
+					<ul class="location-info">
+						<li>
+							<span class="material-symbols-outlined">call</span>
+							<p>電話：<a href="tel:+02000-2345">(02)000-2345</a></p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">schedule</span>
+							<p>營業時間：10:00-21:00</p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">location_on</span>
+							<p>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+						</li>
+					</ul>
+					<button>詳細資訊</button>
+				</div>
+				<div class="location-card">
+					<div class="card-top">
+						<a href="#">
+							<img src="../assets/images/store-4.png" alt="store-5" />
+							<h4>高雄夢時代店</h4>
+						</a>
+					</div>
+					<ul class="location-info">
+						<li>
+							<span class="material-symbols-outlined">call</span>
+							<p>電話：<a href="tel:+02000-1234">(02)000-1234</a></p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">schedule</span>
+							<p>營業時間：10:00-21:00</p>
+						</li>
+						<li>
+							<span class="material-symbols-outlined">location_on</span>
+							<p>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+						</li>
+					</ul>
+					<button>詳細資訊</button>
+				</div>
+			</div>
+		</section>
+
+		<%- include('./layout/footer'); -%>
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>
