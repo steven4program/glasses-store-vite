@@ -1,0 +1,256 @@
+.blog-content-nav {
+  background-color: $color-secondary;
+  margin-bottom: 24px;
+
+  @include pad {
+    margin-bottom: 8px;
+  }
+
+  @include phone {
+    margin-bottom: 16px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 48px;
+
+    @include phone {
+      width: 100%;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    a {
+      color: #fff;
+      font-size: 20px;
+
+      @include phone {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .material-symbols-outlined {
+    color: #fff;
+    font-size: 30px;
+
+    @include phone {
+      display: none;
+    }
+  }
+}
+
+.header-container {
+  margin-bottom: 8px;
+
+  .routes {
+    display: flex;
+
+    a {
+      color: #000;
+
+      &:last-child {
+        color: $color-primary;
+      }
+    }
+
+    span {
+      margin: 0 3px;
+    }
+  }
+
+  .current-tags {
+    display: flex;
+    
+    a {
+      font-size: 24px;
+      color: $color-primary;
+      font-weight: bold;
+      margin-right: 15px;
+
+      @include phone {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.content-container {
+  display: flex;
+  gap: 24px;
+
+  @include pad {
+    border-bottom: 1px solid #707070;
+  }
+
+  @include phone {
+    margin-bottom: 64px;
+  }
+
+  .main-content {
+    width: 66%;
+    margin-right: 24px;
+    border-bottom: 1px solid #707070;
+
+    @include pad {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    @include phone {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    h2 {
+      @include phone {
+        font-size: 24px;
+      }
+    }
+
+    h4 {
+      margin-bottom: 16px;
+
+      @include pad {
+        margin-bottom: 24px;
+      }
+
+      @include phone {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+    }
+
+    p {
+      margin-top: 8px;
+      margin-bottom: 40px;
+
+      @include pad {
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+
+      @include phone {
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .share {
+      margin-top: 40px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 16px;
+
+      @include phone {
+        display: none;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+
+      .img-holder-fb {
+        width: 24px;
+        height: 24px;
+        background-image: url("/assets/images/logo-facebook.png");
+        background-size: cover;
+      }
+
+      .img-holder-ig {
+        width: 24px;
+        height: 24px;
+        background-image: url("/assets/images/logo-instagram.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  .tags {
+    width: 20%;
+
+    @include phone {
+      display: none;
+    }
+
+    &-title {
+      display: flex;
+      margin-bottom: 4px;
+
+      @include pad {
+        margin-bottom: 8px;
+      }
+
+      span {
+        font-size: 48px;
+        font-weight: bold;
+        color: $color-primary;
+
+        @include pad {
+          font-size: 24px;
+        }
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: bold;
+        color: $color-primary;
+        
+        @include pad {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        font-size: 24px;
+        font-weight: bold;
+        color: $color-primary;
+        margin-right: 16px;
+
+        @include pad {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.navigation {
+  margin-top: 24px;
+  margin-bottom: 80px;
+
+  @include phone {
+    display: none;
+  }
+
+  &-container {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+      width: 100%;
+    }
+  }
+
+  a {
+    color: #000;
+    display: flex;
+    gap: 8px;
+  }
+}
