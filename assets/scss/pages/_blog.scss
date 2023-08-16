@@ -1,0 +1,151 @@
+.blog-nav {
+  background-color: $color-secondary;
+
+  @include phone {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 48px;
+
+    a {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+
+  .material-symbols-outlined {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+.blog-header {
+  h2 {
+    padding: 0 16px;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    border-left: 8px solid #9F1213;
+
+    @include pad {
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+
+    @include phone {
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+  }
+}
+
+.blog-articles {
+  &-card {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 24px;
+
+    @include phone {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 32px;
+      color: $color-secondary;
+
+      @include pad {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-weight: 500;
+
+    @include pad {
+      margin-bottom: 4px;
+    }
+  }
+
+  img {
+    width: calc(50% - 12px);
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 20px;
+
+    @include pad {
+      font-size: 16px;
+    }
+  }
+
+  &-content {
+    width: calc(50% - 12px);
+    position: relative;
+
+    @include phone {
+      width: 100%;
+    }
+
+    a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: $color-secondary;
+      font-weight: 900;
+      font-size: 36px;
+      width: 100px;
+
+      @include pad {
+        font-size: 16px;
+        font-weight: normal;
+        width: auto;
+        color: #000;
+      }
+
+      @include phone {
+        display: none;
+      }
+    }
+
+    .content-text {
+      @include phone {
+        display: none;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-top: 124px;
+  margin-bottom: 80px;
+
+  @include pad {
+    margin-top: 80px;
+  }
+
+  @include phone {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+  

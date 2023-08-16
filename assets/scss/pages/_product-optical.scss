@@ -164,6 +164,11 @@
 
       a {
         color: #000;
+        font-size: 18px;
+
+        @include phone {
+          font-size: 16px;
+        }
       }
 
       &:nth-child(1), &:nth-child(6) {
