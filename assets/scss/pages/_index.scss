@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("/assets/images/home-header.png");
+  background-image: url("../images/home-header.png");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: right;
@@ -7,7 +7,7 @@
   padding-bottom: 296px;
 
   @include pad {
-    background-image: url("../assets/images/home-header-sm.png");
+    background-image: url("../images/home-header-sm.png");
   }
 
   @include phone {
@@ -146,14 +146,14 @@
 }
 
 .co-branding {
-  background-image: url("../assets/images/index-bg.png");
+  background-image: url("../images/index-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
 
   @include pad {
-    background-image: url("../assets/images/index-bg-sm.png");
+    background-image: url("../images/index-bg-sm.png");
   }
 
   &-title {
@@ -197,18 +197,18 @@
     }
 
     .double-a-img {
-      background-image: url("../assets/images/home-section4-1.png");
+      background-image: url("../images/home-section4-1.png");
 
       @include phone {
-        background-image: url("../assets/images/home-section4-1-sm.png");
+        background-image: url("../images/home-section4-1-sm.png");
       }
     }
 
     .youth {
-      background-image: url("../assets/images/home-section4-2.png");
+      background-image: url("../images/home-section4-2.png");
 
       @include phone {
-        background-image: url("../assets/images/home-section4-2-sm.png");
+        background-image: url("../images/home-section4-2-sm.png");
       }
     }
   }

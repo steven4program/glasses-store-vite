@@ -34,13 +34,13 @@
   display: flex;
 
   .optical-img-holder-left {
-    background-image: url("../assets/images/product-header-1.png");
+    background-image: url("../images/product-header-1.png");
     height: 296px;
     background-size: cover;
     background-position: center;
 
     @include pad {
-      background-image: url("../assets/images/product-header-sm-1.png");
+      background-image: url("../images/product-header-sm-1.png");
     }
 
     @include phone {
@@ -49,13 +49,13 @@
   }
   
   .optical-img-holder-right {
-    background-image: url("../assets/images/product-header-2.png");
+    background-image: url("../images/product-header-2.png");
     height: 296px;
     background-size: cover;
     background-position: center;
 
     @include pad {
-      background-image: url("../assets/images/product-header-sm-2.png");
+      background-image: url("../images/product-header-sm-2.png");
     }
 
     @include phone {

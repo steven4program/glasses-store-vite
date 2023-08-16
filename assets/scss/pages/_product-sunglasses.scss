@@ -35,13 +35,13 @@
   display: flex;
 
   .sunglasses-img-holder-left {
-    background-image: url("../assets/images/product-header-3.png");
+    background-image: url("../images/product-header-3.png");
     height: 296px;
     background-size: cover;
     background-position: center;
 
     @include pad {
-      background-image: url("../assets/images/product-header-sm-3.png");
+      background-image: url("../images/product-header-sm-3.png");
     }
 
     @include phone {
@@ -50,13 +50,13 @@
   }
   
   .sunglasses-img-holder-right {
-    background-image: url("../assets/images/product-header-4.png");
+    background-image: url("../images/product-header-4.png");
     height: 296px;
     background-size: cover;
     background-position: center;
 
     @include pad {
-      background-image: url("../assets/images/product-header-sm-4.png");
+      background-image: url("../images/product-header-sm-4.png");
     }
 
     @include phone {
