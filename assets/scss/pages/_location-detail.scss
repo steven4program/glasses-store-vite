@@ -1,0 +1,111 @@
+  .branch-select {
+    display: flex;
+    margin-bottom: 40px;
+
+    @include phone {
+      margin-bottom: 24px;
+    }
+
+    select {
+      padding: 6px 12px;
+      width: 304px;
+      border: 1px solid #CED4DA;
+
+      @include phone {
+        width: 276px;
+      }
+    }
+  }
+
+  .location-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    @include phone {
+      margin-bottom: 64px;
+    }
+
+    .location-card {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 24px;
+
+      @include pad {
+        flex-direction: row;
+        gap: 24px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+
+      @include phone {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    .card-top {
+      @include pad {
+        width: calc(50% - 12px);
+        height: 100%;
+      }
+
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    .card-bottom {
+      border: 1px solid #CED4DA;
+      
+      @include pad {
+        width: calc(50% - 12px);
+      }
+
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      padding: 8px 24px;
+      border-bottom: 1px solid #CED4DA;
+    }
+
+    .location-info {
+      padding: 16px 24px;
+
+      li {
+        display: flex;
+        margin-bottom: 8px;
+      }
+
+      .material-symbols-outlined {
+        margin-right: 8px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 24px;
+      }
+
+      a {
+        display: inline-block;
+        color: #000;
+        font-size: 20px;
+      }
+    }
+    
+    .google-map {
+      width: calc(60% - 24px);
+
+      @include pad {
+        width: 100%;
+      }
+    }
+  }
